@@ -56,6 +56,12 @@
     <Compile Include="HarryPotterShippingCartTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShippingCart\ShippingCart.csproj">
+      <Project>{D6A95A7E-AFB9-4F1C-A4AD-8A146C95E781}</Project>
+      <Name>ShippingCart</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

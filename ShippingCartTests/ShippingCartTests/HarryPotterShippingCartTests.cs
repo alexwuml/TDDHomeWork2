@@ -1,5 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ShippingCart;
+using System.Collections.Generic;
 
 namespace ShippingCartTests
 {
