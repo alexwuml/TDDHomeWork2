@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace ShippingCartTests
 {
     [TestClass]
-    public class ShhippingCartTests
+    public class HarryPotterShippingCartTests
     {
         [TestMethod]
         public void CalculateFee_1book_for_100()
