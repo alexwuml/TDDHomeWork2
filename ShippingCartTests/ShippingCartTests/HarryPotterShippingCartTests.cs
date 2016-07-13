@@ -27,7 +27,7 @@ namespace ShippingCartTests
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void CalculateFee_2diffbooks_for_200()
+        public void CalculateFee_2diffbooks_for_195()
         {
             //Arrange
             var target = new HarryPotterShippingCart();
@@ -43,6 +43,27 @@ namespace ShippingCartTests
 
             //Assert
             double expected = 190d;
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void CalculateFee_vol1_3_for_270()
+        {
+            //Arrange
+            var target = new HarryPotterShippingCart();
+            List<Book> booklist =
+                new List<Book>
+            {
+                new Book {Name ="哈利波特第1集",Qty=1,UnitPrice=100 },
+                new Book {Name ="哈利波特第2集",Qty=1,UnitPrice=100 },
+                new Book {Name ="哈利波特第3集",Qty=1,UnitPrice=100 }
+            };
+
+            //Actual
+            double actual = target.Calculate3DifferBookFee(booklist);
+
+            //Assert
+            double expected = 270d;
             Assert.AreEqual(expected, actual);
         }
     }
