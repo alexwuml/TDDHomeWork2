@@ -24,5 +24,10 @@ namespace ShippingCart
         {
             return booklist.Sum(x => x.UnitPrice * x.Qty * 0.90);
         }
+
+        public double Calculate4DifferBookFee(List<Book> booklist)
+        {
+            return booklist.Sum(x => x.UnitPrice * x.Qty * 0.80);
+        }
     }
 }
