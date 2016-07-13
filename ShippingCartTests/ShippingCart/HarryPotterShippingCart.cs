@@ -12,7 +12,12 @@ namespace ShippingCart
 
         public double CalculateFee(List<Book> booklist)
         {
-            return booklist.Sum(x => x.Qty*x.UnitPrice);
+            return booklist.Sum(x => x.UnitPrice * x.Qty);
+        }
+
+        public double Calculate2DifferBookFee(List<Book> booklist)
+        {
+            return booklist.Sum(x => x.UnitPrice * x.Qty*0.95);
         }
     }
 }

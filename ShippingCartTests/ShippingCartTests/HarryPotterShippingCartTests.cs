@@ -39,7 +39,7 @@ namespace ShippingCartTests
             };
 
             //Actual
-            double actual = target.CalculateFee(booklist);
+            double actual = target.Calculate2DifferBookFee(booklist);
 
             //Assert
             double expected = 190d;
