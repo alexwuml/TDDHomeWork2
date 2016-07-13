@@ -20,7 +20,7 @@ namespace ShippingCartTests
             };
 
             //Actual
-            double actual = target.CalculateFee(booklist);
+            double actual = target.CalculatePromoteFee(booklist);
 
             //Assert
             double expected = 100d;
@@ -39,7 +39,7 @@ namespace ShippingCartTests
             };
 
             //Actual
-            double actual = target.Calculate2DifferBookFee(booklist);
+            double actual = target.CalculatePromoteFee(booklist);
 
             //Assert
             double expected = 190d;
@@ -60,7 +60,7 @@ namespace ShippingCartTests
             };
 
             //Actual
-            double actual = target.Calculate3DifferBookFee(booklist);
+            double actual = target.CalculatePromoteFee(booklist);
 
             //Assert
             double expected = 270d;
@@ -82,7 +82,7 @@ namespace ShippingCartTests
             };
 
             //Actual
-            double actual = target.Calculate4DifferBookFee(booklist);
+            double actual = target.CalculatePromoteFee(booklist);
 
             //Assert
             double expected = 320d;
@@ -105,7 +105,7 @@ namespace ShippingCartTests
             };
 
             //Actual
-            double actual = target.Calculate5DifferBookFee(booklist);
+            double actual = target.CalculatePromoteFee(booklist);
 
             //Assert
             double expected = 375d;
